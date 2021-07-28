@@ -1,9 +1,23 @@
+*, *::before, *::after {
+    margin: 0.;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+body {
+    background: #607d8b;
+
+}
+
 .cat{
   position: relative;
   margin: auto;
-  margin-top: 5%;
-  width: 600px;
-  height: 420px;
+  margin-top: 20%;
+  width: 300px;
+  height: 500px;
 }
 .cat__head {
     position: relative;
@@ -137,7 +151,7 @@
     transform: rotate(-45deg);
 }
 .cat__mouth-left {
-    left: 80px;
+    left: 87px;
 }
 .cat__mouth-right {
     left: 108px;
@@ -244,3 +258,15 @@
     z-index: 1;
 }
 
+
+}
+/* .cursor {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border: none;
+    border-radius: 50%;
+    background: #b40660;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 4000;
+} */
