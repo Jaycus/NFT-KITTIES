@@ -13,18 +13,17 @@ body {
 }
 
 .cat{
-  position: relative;
-  margin: fill;
-  transform: scale(0.7, 0.7);
-  width: 100px;
-  height: 520px;
+    position: relative;
+    margin: fill;
+    transform: scale(0.7, 0.7);
+    width: 100px;
+    height: 520px;
 
 }
 .cat__head {
     position: relative;
     width: 230px;
     height: 200px;
-    border-left: 40px solid
     border-top: 10px solid transparent;
     border-radius: 50% 50% 45% 45%;
     background: #3dcfdb;
@@ -248,7 +247,7 @@ body {
     height: 27px;
     transform: rotate(-20deg);
     border-radius: 32% 43% 39% 52% / 28% 21% 86% 72%;
-	background: #3dcfdb;
+    background: #3dcfdb;
     z-index: 1;
 }
 

@@ -1,10 +1,10 @@
 var colors = Object.values(allColors())
 
 var defaultDNA = {
-    "headColor" : 18,
-    "mouthColor" : 53,
-    "eyesColor" : 64,
-    "tailColor" : 16,
+    "headColor" : 10,
+    "mouthColor" : 13,
+    "eyesColor" : 96,
+    "tailColor" : 10,
     "pawsColor" : 22,
     "hornsColor": 33,
     //Cattributes
@@ -24,13 +24,12 @@ $( document ).ready(function() {
     $('#dnatail').html(defaultDNA.tailColor);
     $('#dnapaws').html(defaultDNA.pawsColor);
     $('#dnahorns').html(defaultDNA.hornsColor);
-
-//   $('#dnashape').html(defaultDNA.eyesShape)
-//   $('#dnadecoration').html(defaultDNA.decorationPattern)
-//   $('#dnadecorationMid').html(defaultDNA.decorationMidcolor)
-//   $('#dnadecorationSides').html(defaultDNA.decorationSidescolor)
-//   $('#dnaanimation').html(defaultDNA.animation)
-//   $('#dnaspecial').html(defaultDNA.lastNum)
+    $('#dnashape').html(defaultDNA.eyesShape)
+    $('#dnadecoration').html(defaultDNA.decorationPattern)
+    $('#dnadecorationMid').html(defaultDNA.decorationMidcolor)
+    $('#dnadecorationSides').html(defaultDNA.decorationSidescolor)
+    $('#dnaanimation').html(defaultDNA.animation)
+    $('#dnaspecial').html(defaultDNA.lastNum)
 
     renderCat(defaultDNA)
 });
@@ -64,6 +63,8 @@ function renderCat(dna){
     $('#tailcolor').val(dna.tailColor)
     hornsColor(colors[dna.hornsColor],dna.hornsColor)
     $('#hornscolor').val(dna.hornsColor)
+    $('#eyeshape').val(dna.eyesShape)
+    collarVariation(dna.collarShape)
 }
 
 // Changing cat colors
@@ -95,4 +96,9 @@ $('#pawscolor').change(()=>{
 $('#hornscolor').change(()=>{
     var colorVal = $('#hornscolor').val()
     hornsColor(colors[colorVal],colorVal)
+})
+
+$('#eyeshape').change(()=>{
+    var shape = parseInt($('#eyeshape').val())
+    eyeVariation(shape)
 })

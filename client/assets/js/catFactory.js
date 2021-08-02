@@ -1,4 +1,3 @@
-
 //Random color
 function getColor() {
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -53,19 +52,70 @@ function hornsColor(color,code) {
 
 
 
+
+
 //###################################################
 //Functions below will be used later on in the project
 //###################################################
 function eyeVariation(num) {
-
     $('#dnashape').html(num)
     switch (num) {
         case 1:
             normalEyes()
             $('#eyeName').html('Basic')
             break
+        case 2:
+            normalEyes()
+            $('#eyeName').html('Chill')
+            eyesType1()
+            break
+        case 3:
+            normalEyes()
+            $('#eyeName').html('Scared')
+            eyesType2()
+            break
+        case 4:
+            normalEyes()
+            $('#eyeName').html('Looks up')
+            eyesType3()
+            break
     }
 }
+
+function normalEyes() {
+    $('.eye').css('border', 'none')
+}
+
+function eyesType1() {
+
+    $('.eye').css('border-top', '8px solid')
+    $('.inner_eye_big').css('width', '7px')
+    $('.inner_eye_big').css('left', '15px')
+    $('.inner_eye_small').css('display', 'none')
+    $('.inner_eye_smallest').css('display', 'none')
+}
+
+function eyesType2() {
+    normalEyes()
+    $('.pupils').css('width', '10px')
+    $('.pupils').css('left', '16px')
+    $('.inner_eye_big').css('display', 'none')
+    $('.inner_eye_small').css('display', 'none')
+    $('.inner_eye_smallest').css('display', 'none')
+}
+
+function eyesType3() {
+    normalEyes()
+    $('.pupils').css('width', '24px')
+    $('.pupils').css('left','14px' )
+    $('.pupils').css('top', '0px')
+    $('.inner_eye_big').css('width', '7px')
+    $('.inner_eye_big').css('left', '15px')
+    $('.inner_eye_small').css('display', 'none')
+    $('.inner_eye_smallest').css('display', 'none')
+
+}
+
 
 function decorationVariation(num) {
     $('#dnadecoration').html(num)
