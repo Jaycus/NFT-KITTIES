@@ -13,17 +13,17 @@ body {
 }
 
 .cat{
-  position: relative;
-  margin: auto;
-  margin-top: 20%;
-  width: 300px;
-  height: 500px;
+    position: relative;
+    margin: fill;
+    transform: scale(0.7, 0.7);
+    width: 100px;
+    height: 520px;
+
 }
 .cat__head {
     position: relative;
     width: 230px;
     height: 200px;
-    border-left: 40px solid
     border-top: 10px solid transparent;
     border-radius: 50% 50% 45% 45%;
     background: #3dcfdb;
@@ -67,10 +67,12 @@ body {
 .cat__ear--left {
     transform: scale(-1, 1) rotate(170deg);
     left: -14px;
+    background: #3dcfdb;
 }
 .cat__ear--right {
     transform: rotate(170deg);
     left: 94px;
+    background: #3dcfdb;
 }
 .cat__ear--left-inside, .cat__ear--right-inside {
     width: 108px;
@@ -80,42 +82,33 @@ body {
 }
 .cat__eye {
     position: absolute;
-    top: 10px;
-    left: 25px;
+    top: 50px;
+    left: 80px;
     display: flex;
-}
-
-.cat__eye span {
-    position: absolute;
-    top: 41px;
+    background: #ffffff;
     width: 60px;
     height: 42px;
-    background: #373737;
-    border-radius: 50%;
-    z-index: 200;
+    border-radius: 100%;
 }
-.cat__eye span::before {
-    content: '';
-    top: 5px;
-    left: 4px;
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    border-radius: 50%;
-    background: #fff;
-}
-.cat__eye span::after {
-    content: '';
-    top: 5px;
-    left: 15px;
-    position: absolute;
+
+.cat__pupil1{
+    position: relative;
+    top: 60px;
+    left: 100px;
+    background: #1b1e21;
     width: 20px;
-    height: 30px;
-    border-radius: 50%;
-    background: #373737;
+    height: 20px;
+    border-radius: 100%;
 }
-.cat__eye span.pupil{
-    left: 30px;
+
+.cat__pupil2{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    background: #ffffff;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
 }
 
 .cat__nose {
@@ -254,7 +247,7 @@ body {
     height: 27px;
     transform: rotate(-20deg);
     border-radius: 32% 43% 39% 52% / 28% 21% 86% 72%;
-	background: #3dcfdb;
+    background: #3dcfdb;
     z-index: 1;
 }
 
